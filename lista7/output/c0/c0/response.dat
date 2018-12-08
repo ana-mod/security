@@ -1,0 +1,41 @@
+HTTP/1.1 200 OK
+Date: Mon, 28 Jan 2019 00:54:32 GMT
+Server: WSGIServer/0.2 CPython/3.5.2
+Vary: Cookie
+Expires: Mon, 28 Jan 2019 00:54:32 GMT
+Cache-Control: no-cache, must-revalidate, max-age=0, no-store
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Content-Length: 806
+Set-Cookie: csrftoken=dMuxEMLvtHnYHY9lI3k6BdkgLlW6ozK4IHzGPVn0qY5xv9xORQaWTnY2VDUHHayt; expires=Mon, 27-Jan-2020 00:54:32 GMT; Max-Age=31449600; Path=/
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+</head>
+<body>
+  <header>
+    <h1>Bank</h1>
+     
+      <a href="/signup/">sign up</a>
+      <a href="/login/">login</a>
+      <a href="/password_reset/">reset password</a>
+     
+  </header>
+  <hr>
+  <main>
+    
+  <h2>Login</h2>
+  <form method="post">
+    <input type='hidden' name='csrfmiddlewaretoken' value='P4yyTvHmAO8qrBHjv8e99eU7fayml6WykZDH4EjRx5QZfM5MEV4ZroyTpswXEHKX' />
+    <p><label for="id_username">Użytkownik:</label> <input type="text" name="username" autofocus id="id_username" maxlength="254" required /></p>
+<p><label for="id_password">Hasło:</label> <input type="password" name="password" required id="id_password" /></p>
+    <button type="submit">Login</button>
+  </form>
+
+  </main>
+  <hr>
+</body>
+</html>

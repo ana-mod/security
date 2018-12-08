@@ -1,0 +1,38 @@
+HTTP/1.1 200 OK
+Date: Mon, 28 Jan 2019 00:54:32 GMT
+Server: WSGIServer/0.2 CPython/3.5.2
+Content-Type: text/html; charset=utf-8
+Vary: Cookie
+Content-Length: 682
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: csrftoken=TBSHWFjkibixGbrBHDKwFtQzYPuHjQA2h44ZukBlLkKAfi8xSkvLFokOU0hHUeBj; expires=Mon, 27-Jan-2020 00:54:32 GMT; Max-Age=31449600; Path=/
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bank</title>
+</head>
+<body>
+  <header>
+    <h1>Bank</h1>
+     
+      <a href="/signup/">sign up</a>
+      <a href="/login/">login</a>
+      <a href="/password_reset/">reset password</a>
+     
+  </header>
+  <hr>
+  <main>
+    
+  <h3>Forgot password</h3>
+  <form method="post">
+    <input type='hidden' name='csrfmiddlewaretoken' value='DnzlI8TbU1ymkLCz8302MYo7CWULIW1N1QLDgNbcna0pTSjvjKLhMTSmy7HLjk24' />
+    <p><label for="id_email">Adres email:</label> <input type="email" name="email" required id="id_email" maxlength="254" /></p>
+    <button type="submit">Submit</button>
+  </form>
+
+  </main>
+  <hr>
+</body>
+</html>

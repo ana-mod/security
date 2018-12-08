@@ -1,0 +1,29 @@
+HTTP/1.1 200 OK
+Date: Mon, 28 Jan 2019 00:54:32 GMT
+Server: WSGIServer/0.2 CPython/3.5.2
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Content-Length: 1555
+Vary: Cookie
+Set-Cookie: csrftoken=vdjpFFi8S8xCKlutiw8jNBF7wIdVjLCczbQdigrlt2aNXqLq6xSnz6rs9juRWoke; expires=Mon, 27-Jan-2020 00:54:32 GMT; Max-Age=31449600; Path=/
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bank</title>
+</head>
+<body>
+  <header>
+    <h1>Bank</h1>
+     
+      <a href="/signup/">sign up</a>
+      <a href="/login/">login</a>
+      <a href="/password_reset/">reset password</a>
+     
+  </header>
+  <hr>
+  <main>
+    
+  <h2>Sign up</h2>
+  <form method="post"

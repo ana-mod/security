@@ -1,0 +1,6 @@
+var child = [
+  { 'dupe': false, 'type': 4, 'name': 'login', 'dir': 'c0', 'linked': 5, 'url': 'http://127.0.0.1:8000/login/', 'fetched': true, 'code': 200, 'len': 806, 'decl_mime': 'text/html', 'sniff_mime': 'application/xhtml+xml', 'cset': 'utf-8', 'missing': false, 'csens': false, 'child_cnt': 3, 'issue_cnt': [ 5, 5, 0, 0, 0 ], 'sig': 0xd8ba6446 },
+  { 'dupe': false, 'type': 4, 'name': 'signup', 'dir': 'c1', 'linked': 5, 'url': 'http://127.0.0.1:8000/signup/', 'fetched': true, 'code': 200, 'len': 1555, 'decl_mime': 'text/html', 'sniff_mime': 'application/xhtml+xml', 'cset': 'utf-8', 'missing': false, 'csens': false, 'child_cnt': 5, 'issue_cnt': [ 2, 7, 0, 0, 0 ], 'sig': 0x7a6916d1 },
+  { 'dupe': false, 'type': 4, 'name': 'usr', 'dir': 'c2', 'linked': 1, 'url': 'http://127.0.0.1:8000/usr/', 'fetched': true, 'code': 404, 'len': 3494, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': '[none]', 'missing': true, 'csens': false, 'child_cnt': 10, 'issue_cnt': [ 2, 13, 0, 0, 0 ], 'sig': 0xc63bc2ef },
+  { 'dupe': false, 'type': 16, 'name': 'password_reset', 'dir': 'c3', 'linked': 5, 'url': 'http://127.0.0.1:8000/password_reset', 'fetched': true, 'code': 200, 'len': 682, 'decl_mime': 'text/html', 'sniff_mime': 'application/xhtml+xml', 'cset': 'utf-8', 'missing': false, 'csens': false, 'child_cnt': 2, 'issue_cnt': [ 2, 4, 1, 1, 0 ], 'sig': 0x89864891 }
+];

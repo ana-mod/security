@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Date: Mon, 28 Jan 2019 00:54:32 GMT
+Server: WSGIServer/0.2 CPython/3.5.2
+Vary: Cookie
+Expires: Mon, 28 Jan 2019 00:54:32 GMT
+Cache-Control: no-cache, must-revalidate, max-age=0, no-store
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Content-Length: 806
+Set-Cookie: csrftoken=dMuxEMLvtHnYHY9lI3k6BdkgLlW6ozK4IHzGPVn0qY5xv9xORQaWTnY2VDUHHayt; expires=Mon, 27-Jan-2020 00:54:32 GMT; Max-Age=31449600; Path=/
+
+[...truncated...]

@@ -1,0 +1,526 @@
+HTTP/1.1 500 Internal Server Error
+Date: Mon, 28 Jan 2019 00:55:16 GMT
+Server: WSGIServer/0.2 CPython/3.5.2
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <title>RuntimeError
+          at /password_reset</title>
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background-color:#fff; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; }
+    h2 { margin-bottom:.8em; }
+    h2 span { font-size:80%; color:#666; font-weight:normal; }
+    h3 { margin:1em 0 .5em 0; }
+    h4 { margin:0 0 .5em 0; font-weight: normal; }
+    code, pre { font-size: 100%; white-space: pre-wrap; }
+    table { border:1px solid #ccc; border-collapse: collapse; width:100%; background:white; }
+    tbody td, tbody th { vertical-align:top; padding:2px 3px; }
+    thead th {
+      padding:1px 6px 1px 3px; background:#fefefe; text-align:left;
+      font-weight:normal; font-size:11px; border:1px solid #ddd;
+    }
+    tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    table.vars { margin:5px 0 2px 40px; }
+    table.vars td, table.req td { font-family:monospace; }
+    table td.code { width:100%; }
+    table td.code pre { overflow:hidden; }
+    table.source th { color:#666; }
+    table.source td { font-family:monospace; white-space:pre; border-bottom:1px solid #eee; }
+    ul.traceback { list-style-type:none; color: #222; }
+    ul.traceback li.frame { padding-bottom:1em; color:#666; }
+    ul.traceback li.user { background-color:#e0e0e0; color:#000 }
+    div.context { padding:10px 0; overflow:hidden; }
+    div.context ol { padding-left:30px; margin:0 10px; list-style-position: inside; }
+    div.context ol li { font-family:monospace; white-space:pre; color:#777; cursor:pointer; padding-left: 2px; }
+    div.context ol li pre { display:inline; }
+    div.context ol.context-line li { color:#505050; background-color:#dfdfdf; padding: 3px 2px; }
+    div.context ol.context-line li span { position:absolute; right:32px; }
+    .user div.context ol.context-line li { background-color:#bbb; color:#000; }
+    .user div.context ol li { color:#666; }
+    div.commands { margin-left: 40px; }
+    div.commands a { color:#555; text-decoration:none; }
+    .user div.commands a { color: black; }
+    #summary { background: #ffc; }
+    #summary h2 { font-weight: normal; color: #666; }
+    #explanation { background:#eee; }
+    #template, #template-not-exist { background:#f6f6f6; }
+    #template-not-exist ul { margin: 0 0 10px 20px; }
+    #template-not-exist .postmortem-section { margin-bottom: 3px; }
+    #unicode-hint { background:#eee; }
+    #traceback { background:#eee; }
+    #requestinfo { background:#f6f6f6; padding-left:120px; }
+    #summary table { border:none; background:transparent; }
+    #requestinfo h2, #requestinfo h3 { position:relative; margin-left:-100px; }
+    #requestinfo h3 { margin-bottom:-1em; }
+    .error { background: #ffc; }
+    .specific { color:#cc3300; font-weight:bold; }
+    h2 span.commands { font-size:.7em;}
+    span.commands a:link {color:#5E5694;}
+    pre.exception_value { font-family: sans-serif; color: #666; font-size: 1.5em; margin: 10px 0 10px 0; }
+    .append-bottom { margin-bottom: 10px; }
+  </style>
+  
+  <script type="text/javascript">
+    function hideAll(elems) {
+      for (var e = 0; e < elems.length; e++) {
+        elems[e].style.display = 'none';
+      }
+    }
+    window.onload = function() {
+      hideAll(document.querySelectorAll('table.vars'));
+      hideAll(document.querySelectorAll('ol.pre-context'));
+      hideAll(document.querySelectorAll('ol.post-context'));
+      hideAll(document.querySelectorAll('div.pastebin'));
+    }
+    function toggle() {
+      for (var i = 0; i < arguments.length; i++) {
+        var e = document.getElementById(arguments[i]);
+        if (e) {
+          e.style.display = e.style.display == 'none' ? 'block': 'none';
+        }
+      }
+      return false;
+    }
+    function varToggle(link, id) {
+      toggle('v' + id);
+      var s = link.getElementsByTagName('span')[0];
+      var uarr = String.fromCharCode(0x25b6);
+      var darr = String.fromCharCode(0x25bc);
+      s.textContent = s.textContent == uarr ? darr : uarr;
+      return false;
+    }
+    function switchPastebinFriendly(link) {
+      s1 = "Switch to copy-and-paste view";
+      s2 = "Switch back to interactive view";
+      link.textContent = link.textContent.trim() == s1 ? s2: s1;
+      toggle('browserTraceback', 'pastebinTraceback');
+      return false;
+    }
+  </script>
+  
+</head>
+<body>
+<div id="summary">
+  <h1>RuntimeError
+       at /password_reset</h1>
+  <pre class="exception_value">You called this URL via POST, but the URL doesn&#39;t end in a slash and you have APPEND_SLASH set. Django can&#39;t redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/password_reset/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.</pre>
+  <table class="meta">
+
+    <tr>
+      <th>Request Method:</th>
+      <td>POST</td>
+    </tr>
+    <tr>
+      <th>Request URL:</th>
+      <td>http://127.0.0.1:8000/password_reset</td>
+    </tr>
+
+    <tr>
+      <th>Django Version:</th>
+      <td>2.0</td>
+    </tr>
+
+    <tr>
+      <th>Exception Type:</th>
+      <td>RuntimeError</td>
+    </tr>
+
+
+    <tr>
+      <th>Exception Value:</th>
+      <td><pre>You called this URL via POST, but the URL doesn&#39;t end in a slash and you have APPEND_SLASH set. Django can&#39;t redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/password_reset/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.</pre></td>
+    </tr>
+
+
+    <tr>
+      <th>Exception Location:</th>
+      <td>/usr/local/lib/python3.5/dist-packages/django/middleware/common.py in get_full_path_with_slash, line 99</td>
+    </tr>
+
+    <tr>
+      <th>Python Executable:</th>
+      <td>/usr/bin/python3</td>
+    </tr>
+    <tr>
+      <th>Python Version:</th>
+      <td>3.5.2</td>
+    </tr>
+    <tr>
+      <th>Python Path:</th>
+      <td><pre>[&#39;/home/ana/Desktop/bezp&#39;,
+ &#39;/usr/lib/python35.zip&#39;,
+ &#39;/usr/lib/python3.5&#39;,
+ &#39;/usr/lib/python3.5/plat-x86_64-linux-gnu&#39;,
+ &#39;/usr/lib/python3.5/lib-dynload&#39;,
+ &#39;/usr/local/lib/python3.5/dist-packages&#39;,
+ &#39;/usr/lib/python3/dist-packages&#39;]</pre></td>
+    </tr>
+    <tr>
+      <th>Server time:</th>
+      <td>Pon, 28 Sty 2019 01:55:16 +0100</td>
+    </tr>
+  </table>
+</div>
+
+
+
+
+<div id="traceback">
+  <h2>Traceback <span class="commands"><a href="#" onclick="return switchPastebinFriendly(this);">
+    Switch to copy-and-paste view</a></span>
+  </h2>
+  <div id="browserTraceback">
+    <ul class="traceback">
+      
+        
+        <li class="frame django">
+          <code>/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py</code> in <code>inner</code>
+
+          
+            <div class="context" id="c139949825261000">
+              
+                <ol start="28" class="pre-context" id="pre139949825261000">
+                
+                  <li onclick="toggle('pre139949825261000', 'post139949825261000')"><pre>    This decorator is automatically applied to all middleware to ensure that</pre></li>
+                
+                  <li onclick="toggle('pre139949825261000', 'post139949825261000')"><pre>    no middleware leaks an exception and that the next middleware in the stack</pre></li>
+                
+                  <li onclick="toggle('pre139949825261000', 'post139949825261000')"><pre>    can rely on getting a response instead of an exception.</pre></li>
+                
+                  <li onclick="toggle('pre139949825261000', 'post139949825261000')"><pre>    &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre139949825261000', 'post139949825261000')"><pre>    @wraps(get_response)</pre></li>
+                
+                  <li onclick="toggle('pre139949825261000', 'post139949825261000')"><pre>    def inner(request):</pre></li>
+                
+                  <li onclick="toggle('pre139949825261000', 'post139949825261000')"><pre>        try:</pre></li>
+                
+                </ol>
+              
+              <ol start="35" class="context-line">
+                <li onclick="toggle('pre139949825261000', 'post139949825261000')"><pre>            response = get_response(request)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='36' class="post-context" id="post139949825261000">
+                  
+                  <li onclick="toggle('pre139949825261000', 'post139949825261000')"><pre>        except Exception as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre139949825261000', 'post139949825261000')"><pre>            response = response_for_exception(request, exc)</pre></li>
+                  
+                  <li onclick="toggle('pre139949825261000', 'post139949825261000')"><pre>        return response</pre></li>
+                  
+                  <li onclick="toggle('pre139949825261000', 'post139949825261000')"><pre>    return inner</pre></li>
+                  
+                  <li onclick="toggle('pre139949825261000', 'post139949825261000')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139949825261000', 'post139949825261000')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139949825261000')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139949825261000">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>RuntimeError(&quot;You called this URL via POST, but the URL doesn&#39;t end in a slash and you have APPEND_SLASH set. Django can&#39;t redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/password_reset/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.&quot;,)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>get_response</td>
+                    <td class="code"><pre>&lt;django.middleware.common.CommonMiddleware object at 0x7f489b9ff630&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#39;/password_reset&#39;&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/usr/local/lib/python3.5/dist-packages/django/utils/deprecation.py</code> in <code>__call__</code>
+
+          
+            <div class="context" id="c139949825259912">
+              
+                <ol start="86" class="pre-context" id="pre139949825259912">
+                
+                  <li onclick="toggle('pre139949825259912', 'post139949825259912')"><pre>    def __init__(self, get_response=None):</pre></li>
+                
+                  <li onclick="toggle('pre139949825259912', 'post139949825259912')"><pre>        self.get_response = get_response</pre></li>
+                
+                  <li onclick="toggle('pre139949825259912', 'post139949825259912')"><pre>        super().__init__()</pre></li>
+                
+                  <li onclick="toggle('pre139949825259912', 'post139949825259912')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139949825259912', 'post139949825259912')"><pre>    def __call__(self, request):</pre></li>
+                
+                  <li onclick="toggle('pre139949825259912', 'post139949825259912')"><pre>        response = None</pre></li>
+                
+                  <li onclick="toggle('pre139949825259912', 'post139949825259912')"><pre>        if hasattr(self, &#39;process_request&#39;):</pre></li>
+                
+                </ol>
+              
+              <ol start="93" class="context-line">
+                <li onclick="toggle('pre139949825259912', 'post139949825259912')"><pre>            response = self.process_request(request)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='94' class="post-context" id="post139949825259912">
+                  
+                  <li onclick="toggle('pre139949825259912', 'post139949825259912')"><pre>        if not response:</pre></li>
+                  
+                  <li onclick="toggle('pre139949825259912', 'post139949825259912')"><pre>            response = self.get_response(request)</pre></li>
+                  
+                  <li onclick="toggle('pre139949825259912', 'post139949825259912')"><pre>        if hasattr(self, &#39;process_response&#39;):</pre></li>
+                  
+                  <li onclick="toggle('pre139949825259912', 'post139949825259912')"><pre>            response = self.process_response(request, response)</pre></li>
+                  
+                  <li onclick="toggle('pre139949825259912', 'post139949825259912')"><pre>        return response</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139949825259912')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139949825259912">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#39;/password_reset&#39;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.middleware.common.CommonMiddleware object at 0x7f489b9ff630&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/usr/local/lib/python3.5/dist-packages/django/middleware/common.py</code> in <code>process_request</code>
+
+          
+            <div class="context" id="c139949825257544">
+              
+                <ol start="54" class="pre-context" id="pre139949825257544">
+                
+                  <li onclick="toggle('pre139949825257544', 'post139949825257544')"><pre>        # Check for a redirect based on settings.PREPEND_WWW</pre></li>
+                
+                  <li onclick="toggle('pre139949825257544', 'post139949825257544')"><pre>        host = request.get_host()</pre></li>
+                
+                  <li onclick="toggle('pre139949825257544', 'post139949825257544')"><pre>        must_prepend = settings.PREPEND_WWW and host and not host.startswith(&#39;www.&#39;)</pre></li>
+                
+                  <li onclick="toggle('pre139949825257544', 'post139949825257544')"><pre>        redirect_url = (&#39;%s://www.%s&#39; % (request.scheme, host)) if must_prepend else &#39;&#39;</pre></li>
+                
+                  <li onclick="toggle('pre139949825257544', 'post139949825257544')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139949825257544', 'post139949825257544')"><pre>        # Check if a slash should be appended</pre></li>
+                
+                  <li onclick="toggle('pre139949825257544', 'post139949825257544')"><pre>        if self.should_redirect_with_slash(request):</pre></li>
+                
+                </ol>
+              
+              <ol start="61" class="context-line">
+                <li onclick="toggle('pre139949825257544', 'post139949825257544')"><pre>            path = self.get_full_path_with_slash(request)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='62' class="post-context" id="post139949825257544">
+                  
+                  <li onclick="toggle('pre139949825257544', 'post139949825257544')"><pre>        else:</pre></li>
+                  
+                  <li onclick="toggle('pre139949825257544', 'post139949825257544')"><pre>            path = request.get_full_path()</pre></li>
+                  
+                  <li onclick="toggle('pre139949825257544', 'post139949825257544')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139949825257544', 'post139949825257544')"><pre>        # Return a redirect if necessary</pre></li>
+                  
+                  <li onclick="toggle('pre139949825257544', 'post139949825257544')"><pre>        if redirect_url or path != request.get_full_path():</pre></li>
+                  
+                  <li onclick="toggle('pre139949825257544', 'post139949825257544')"><pre>            redirect_url += path</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139949825257544')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139949825257544">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>host</td>
+                    <td class="code"><pre>&#39;127.0.0.1:8000&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>must_prepend</td>
+                    <td class="code"><pre>False</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>redirect_url</td>
+                    <td class="code"><pre>&#39;&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#39;/password_reset&#39;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.middleware.common.CommonMiddleware object at 0x7f489b9ff630&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/usr/local/lib/python3.5/dist-packages/django/middleware/common.py</code> in <code>get_full_path_with_slash</code>
+
+          
+            <div class="context" id="c139949810954184">
+              
+                <ol start="92" class="pre-context" id="pre139949810954184">
+                
+                  <li onclick="toggle('pre139949810954184', 'post139949810954184')"><pre>            raise RuntimeError(</pre></li>
+                
+                  <li onclick="toggle('pre139949810954184', 'post139949810954184')"><pre>                &quot;You called this URL via %(method)s, but the URL doesn&#39;t end &quot;</pre></li>
+                
+                  <li onclick="toggle('pre139949810954184', 'post139949810954184')"><pre>                &quot;in a slash and you have APPEND_SLASH set. Django can&#39;t &quot;</pre></li>
+                
+                  <li onclick="toggle('pre139949810954184', 'post139949810954184')"><pre>                &quot;redirect to the slash URL while maintaining %(method)s data. &quot;</pre></li>
+                
+                  <li onclick="toggle('pre139949810954184', 'post139949810954184')"><pre>                &quot;Change your form to point to %(url)s (note the trailing &quot;</pre></li>
+                
+                  <li onclick="toggle('pre139949810954184', 'post139949810954184')"><pre>                &quot;slash), or set APPEND_SLASH=False in your Django settings.&quot; % {</pre></li>
+                
+                  <li onclick="toggle('pre139949810954184', 'post139949810954184')"><pre>                    &#39;method&#39;: request.method,</pre></li>
+                
+                </ol>
+              
+              <ol start="99" class="context-line">
+                <li onclick="toggle('pre139949810954184', 'post139949810954184')"><pre>                    &#39;url&#39;: request.get_host() + new_path,</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='100' class="post-context" id="post139949810954184">
+                  
+                  <li onclick="toggle('pre139949810954184', 'post139949810954184')"><pre>                }</pre></li>
+                  
+                  <li onclick="toggle('pre139949810954184', 'post139949810954184')"><pre>            )</pre></li>
+                  
+                  <li onclick="toggle('pre139949810954184', 'post139949810954184')"><pre>        return new_path</pre></li>
+                  
+                  <li onclick="toggle('pre139949810954184', 'post139949810954184')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139949810954184', 'post139949810954184')"><pre>    def process_response(self, request, response):</pre></li>
+                  
+                  <li onclick="toggle('pre139949810954184', 'post139949810954184')"><pre>        &quot;&quot;&quot;</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139949810954184')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139949810954184">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>new_path</td>
+                    <td class="code"><pre>&#39;/password_reset/&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#39;/password_reset&#39;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.middleware.common.CommonMiddleware object at 0x7f489b9ff630&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+    </ul>
+  </div>
+  <form action="http://dpaste.com/" name="pasteform" id="pasteform" method="post"

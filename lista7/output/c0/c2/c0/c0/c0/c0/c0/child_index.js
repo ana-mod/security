@@ -1,0 +1,5 @@
+var child = [
+  { 'dupe': false, 'type': 4, 'name': 'core', 'dir': 'c0', 'linked': 1, 'url': 'http://127.0.0.1:8000/usr/local/lib/python3.5/dist-packages/django/core/', 'fetched': true, 'code': 404, 'len': 3632, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': '[none]', 'missing': true, 'csens': false, 'child_cnt': 2, 'issue_cnt': [ 0, 3, 0, 0, 0 ], 'sig': 0x8d9ad644 },
+  { 'dupe': false, 'type': 4, 'name': 'middleware', 'dir': 'c1', 'linked': 1, 'url': 'http://127.0.0.1:8000/usr/local/lib/python3.5/dist-packages/django/middleware/', 'fetched': true, 'code': 404, 'len': 3650, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': '[none]', 'missing': true, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 1, 0, 0, 0 ], 'sig': 0x8c675663 },
+  { 'dupe': false, 'type': 4, 'name': 'utils', 'dir': 'c2', 'linked': 1, 'url': 'http://127.0.0.1:8000/usr/local/lib/python3.5/dist-packages/django/utils/', 'fetched': true, 'code': 404, 'len': 3635, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': '[none]', 'missing': true, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 1, 0, 0, 0 ], 'sig': 0x9d1cf76b }
+];

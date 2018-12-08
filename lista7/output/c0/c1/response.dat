@@ -1,0 +1,41 @@
+HTTP/1.1 200 OK
+Date: Mon, 28 Jan 2019 00:54:32 GMT
+Server: WSGIServer/0.2 CPython/3.5.2
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Content-Length: 1555
+Vary: Cookie
+Set-Cookie: csrftoken=vdjpFFi8S8xCKlutiw8jNBF7wIdVjLCczbQdigrlt2aNXqLq6xSnz6rs9juRWoke; expires=Mon, 27-Jan-2020 00:54:32 GMT; Max-Age=31449600; Path=/
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bank</title>
+</head>
+<body>
+  <header>
+    <h1>Bank</h1>
+     
+      <a href="/signup/">sign up</a>
+      <a href="/login/">login</a>
+      <a href="/password_reset/">reset password</a>
+     
+  </header>
+  <hr>
+  <main>
+    
+  <h2>Sign up</h2>
+  <form method="post">
+    <input type='hidden' name='csrfmiddlewaretoken' value='k3eJRt6IbNczJbbjlAwI4bqQNadCb3STo1Lxu4fVMHPKWgsg9BgMQGcbqLuyOGAV' />
+    <p><label for="id_username">Użytkownik:</label> <input type="text" name="username" autofocus id="id_username" maxlength="150" required /> <span class="helptext">Wymagana. 150 lub mniej znaków. Jedynie litery, cyfry i @/./+/-/_.</span></p>
+<p><label for="id_email">Email:</label> <input type="email" name="email" required id="id_email" maxlength="254" /></p>
+<p><label for="id_password1">Hasło:</label> <input type="password" name="password1" required id="id_password1" /> <span class="helptext"><ul><li>Twoje hasło nie może być zbyt podobne do twoich innych danych osobistych.</li><li>Twoje hasło musi zawierać co najmniej 8 znaków.</li><li>Twoje hasło nie może być powszechnie używanym hasłem.</li><li>Twoje hasło nie może składać się tylko z cyfr.</li></ul></span></p>
+<p><label for="id_password2">Potwierdzenie hasła:</label> <input type="password" name="password2" required id="id_password2" /> <span class="helptext">Wprowadź to samo hasło ponownie, dla weryfikacji.</span></p>
+    <button type="submit">Sign up</button>
+  </form>
+
+  </main>
+  <hr>
+</body>
+</html>
